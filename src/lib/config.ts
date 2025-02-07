@@ -1,11 +1,13 @@
+import { readFileSync } from 'fs';
 import { z } from 'zod';
-import configFile from "../../config.json"
+
+const configFile = JSON.parse(readFileSync("config.json", 'utf-8'));
 
 const configSchema = z.object({
+    // Bot
     TOKEN: z.string(),
     CLIENT_ID: z.string(),
+    BOT_PREFIX: z.string(),
 })
 
-const config = configSchema.parse(configFile)
-
-export default config
+export default configSchema.parse(configFile)
