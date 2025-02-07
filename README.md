@@ -15,7 +15,7 @@ A **discord.js TypeScript template** to quickly kickstart the development of you
 1. Clone the repository:
 
    ```sh
-   git clone https://github.com/your-username/discord-ts-template.git
+   git clone https://github.com/0xHouss/discord-ts-template.git
    cd discord-ts-template
    ```
 
@@ -31,7 +31,7 @@ A **discord.js TypeScript template** to quickly kickstart the development of you
    cp config.example.json config.json
    ```
 
-4. Fill in the required bot credentials inside `config.json`.
+4. Fill in the required bot config inside `config.json`.
 
 ## 🏃 Running the Bot
 
@@ -83,7 +83,7 @@ export default new SlashCommand({
 });
 ```
 
-### Event Example (`src/events/messageCreate.ts`)
+### Event Example
 
 ```ts
 import { Events, Message } from 'discord.js';
